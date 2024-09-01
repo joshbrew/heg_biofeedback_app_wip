@@ -1,0 +1,44 @@
+.video-container {
+    position: relative;
+}
+
+.video-container:hover .video-controls {
+    visibility: visible;
+    opacity: 1;
+}
+
+.video-controls {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    z-index: 100;
+    pointer-events: none;
+}
+
+.video-controls button {
+    cursor: pointer;
+    padding:0;
+    font-size:large;
+    background-color: transparent;
+    border:none;
+    transition: 1s ease-in-out;
+    pointer-events:auto;
+}
+
+.video-controls button:active {
+    opacity:0.5;
+}
+
+.video-controls input {
+    min-width:50%;
+    cursor: pointer;
+    pointer-events:auto;
+}
+

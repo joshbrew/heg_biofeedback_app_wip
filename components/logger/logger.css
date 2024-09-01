@@ -1,0 +1,10 @@
+.logger {
+    font-size:'10px';
+    font-family:'monospace'; 
+    width: '100%'; 
+    height: '300px';
+    color:ghostwhite;
+    background-color: black;
+    display:flex;
+    flex-direction: column-reverse;
+}
